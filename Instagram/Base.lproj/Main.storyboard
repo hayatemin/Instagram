@@ -183,6 +183,9 @@
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="clb-Tc-kTM"/>
                                 </constraints>
                                 <state key="normal" title="投稿" backgroundImage="btn"/>
+                                <connections>
+                                    <action selector="handlePostButton:" destination="p8C-dz-UCy" eventType="touchUpInside" id="2c5-Qt-0Z4"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xnp-v8-vCh">
                                 <rect key="frame" x="57" y="254" width="300" height="40"/>
@@ -190,6 +193,9 @@
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="YX3-be-vYl"/>
                                 </constraints>
                                 <state key="normal" title="キャンセル" backgroundImage="btn"/>
+                                <connections>
+                                    <action selector="handleCancelButton:" destination="p8C-dz-UCy" eventType="touchUpInside" id="AST-M3-ROw"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="キャプション" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4y9-pb-QZb">
                                 <rect key="frame" x="140" y="150" width="264" height="34"/>
@@ -211,6 +217,10 @@
                             <constraint firstItem="WjX-f7-Qcx" firstAttribute="centerX" secondItem="AV4-mV-hvW" secondAttribute="centerX" id="znT-yt-tuM"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="adl-C2-w3S" id="oMw-TZ-h03"/>
+                        <outlet property="textField" destination="4y9-pb-QZb" id="Peb-FP-tvf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wa8-uW-eRs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
