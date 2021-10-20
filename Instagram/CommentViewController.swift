@@ -10,7 +10,8 @@ import Firebase
 import SVProgressHUD
 
 class CommentViewController: UIViewController {
-    @IBOutlet weak var textView: UILabel!
+    
+    @IBOutlet weak var textView: UITextField!
     
     var postData: PostData?// コメント対象となる投稿のデータ
     

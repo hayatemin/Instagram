@@ -85,6 +85,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         commentViewController.postData = postData
         self.present(commentViewController, animated: true, completion: nil)
     }
+    
     // セル内のLikeボタンがタップされた時に呼ばれるメソッド
     @objc func handleLikeButton(_ sender: UIButton, forEvent event: UIEvent) {
         print("DEBUG_PRINT: likeボタンがタップされました。")

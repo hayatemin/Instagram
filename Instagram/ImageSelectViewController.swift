@@ -11,11 +11,11 @@ import CLImageEditor
 class ImageSelectViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, CLImageEditorDelegate {
     
     @IBAction func handleLibraryButton(_ sender: Any) {
-        // カメラを指定してピッカーを開く
-        if UIImagePickerController.isSourceTypeAvailable(.camera) {
+        // ライブラリ（カメラロール）を指定してピッカーを開く
+        if UIImagePickerController.isSourceTypeAvailable(.photoLibrary) {
             let pickerController = UIImagePickerController()
             pickerController.delegate = self
-            pickerController.sourceType = .camera
+            pickerController.sourceType = .photoLibrary
             self.present(pickerController, animated: true, completion: nil)
         }
     }
