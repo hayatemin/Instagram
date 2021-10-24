@@ -38,6 +38,10 @@ class PostData: NSObject {
                 self.isLiked = true
             }
         }
-        self.comments = postDic["comments"] as? [Dictionary<String, String>] ?? []
+        print("postDic[comments]")
+        if let comments = postDic["comments"] as? [Dictionary<String, String>] {
+           print(comments)
+            self.comments = comments
+        }
     }
 }

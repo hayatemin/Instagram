@@ -61,13 +61,15 @@ class PostTableViewCell: UITableViewCell {
         }
         
         // コメントの表示
-        commentArea.text = "コメント"
+        var comment = ""
+
         for c in postData.comments {
-            // コメント投稿者
-            let commenterDisplayName = c.keys.first as! String
-            commentArea.text! += "\n" + commenterDisplayName + ": "
-            // コメント内容+改行
-            commentArea.text! += c[commenterDisplayName]!
+          // コメント投稿者
+          let commenterDisplayName = c.keys.first as! String
+          comment += "\n" + commenterDisplayName + ": "
+          // コメント内容+改行
+          comment += c[commenterDisplayName]!
         }
+        commentArea.text = comment
     }
 }
